@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Database Interaction</title>
+
+  <style>
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .form-row > form {
+      flex: 1 1 50px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Database Interaction</h1>
+  
+  <div class="form-row">
+
+    <h3>Add Administrator</h3>
+    <form action="/" method="POST">
+      <label for="admin_id">Administrator ID:</label><br>
+      <input type="number" id="admin_id" name="administrator_id" required><br>
+      <label for="admin_name">Administrator Name:</label><br>
+      <input type="text" id="admin_name" name="admin_name" required><br>
+      <input type="submit" value="Add Administrator">
+    </form>
+    
+    <h3>Add Teacher</h3>
+    <form action="/" method="POST">
+      <label for="teacher_id">Teacher ID:</label><br>
+      <input type="number" id="teacher_id" name="teacher_id" required><br>
+      <label for="teacher_name">Teacher Name:</label><br>
+      <input type="text" id="teacher_name" name="teacher_name" required><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="phone">Phone:</label><br>
+      <input type="text" id="phone" name="phone" required><br>
+      <input type="submit" value="Add Teacher">
+    </form>
+  
+    <h3>Add Lecture</h3>
+    <form action="/" method="POST">
+      <label for="lecture_id">Lecture ID:</label><br>
+      <input type="number" id="lecture_id" name="lecture_id" required><br>
+      <label for="topic">Topic:</label><br>
+      <input type="text" id="topic" name="topic" required><br>
+      <label for="date">Date:</label><br>
+      <input type="date" id="date" name="date" required><br>
+      <input type="submit" value="Add Lecture">
+    </form>
+  
+    <h3>Add Student</h3>
+    <form action="/" method="POST">
+      <label for="student_id">Student ID:</label><br>
+      <input type="number" id="student_id" name="student_id" required><br>
+      <label for="student_name">Student Name:</label><br>
+      <input type="text" id="student_name" name="student_name" required><br>
+      <label for="average_mark">Average Mark:</label><br>
+      <input type="number" step="0.01" id="average_mark" name="average_mark" required><br>
+      <input type="submit" value="Add Student">
+    </form>
+  
+    <h3>Add Course</h3>
+    <form action="/" method="POST">
+      <label for="course_id">Course ID:</label><br>
+      <input type="number" id="course_id" name="course_id" required><br>
+      <input type="submit" value="Add Course">
+    </form>
+  
+    <h3>Add Room</h3>
+    <form action="/" method="POST">
+      <label for="room_id">Room ID:</label><br>
+      <input type="number" id="room_id" name="room_id" required><br>
+      <label for="building">Building:</label><br>
+      <input type="text" id="building" name="building" required><br>
+      <label for="class">Class:</label><br>
+      <input type="number" id="class" name="class" required><br>
+      <input type="submit" value="Add Room">
+    </form>
+  
+    <h3>Add Assistant</h3>
+    <form action="/" method="POST">
+      <label for="assistant_id">Assistant ID:</label><br>
+      <input type="number" id="assistant_id" name="assistant_id" required><br>
+      <label for="assistant_name">Assistant Name:</label><br>
+      <input type="text" id="assistant_name" name="assistant_name" required><br>
+      <input type="submit" value="Add Assistant">
+    </form>
+  
+
+  </div>
+  
+
+  <h3>Retrieve Data</h3>
+  <form action="/retrieve" method="GET">
+    <label for="table_name">Table Name:</label><br>
+    <p>Administrator --- Teacher --- Student --- Assistant  --- Course --- Room</p>
+    <input type="text" id="table_name" name="table_name" required><br>
+    <input type="submit" value="Retrieve Data">
+  </form>
+</body>
+</html>
