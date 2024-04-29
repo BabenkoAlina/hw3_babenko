@@ -22,7 +22,7 @@
   <div class="form-row">
 
     <h3>Add Administrator</h3>
-    <form action="/" method="POST">
+    <form action="/add_admin" method="POST">
       <label for="admin_id">Administrator ID:</label><br>
       <input type="number" id="admin_id" name="administrator_id" required><br>
       <label for="admin_name">Administrator Name:</label><br>
@@ -31,7 +31,7 @@
     </form>
     
     <h3>Add Teacher</h3>
-    <form action="/" method="POST">
+    <form action="/add_teacher" method="POST">
       <label for="teacher_id">Teacher ID:</label><br>
       <input type="number" id="teacher_id" name="teacher_id" required><br>
       <label for="teacher_name">Teacher Name:</label><br>
@@ -44,7 +44,7 @@
     </form>
   
     <h3>Add Lecture</h3>
-    <form action="/" method="POST">
+    <form action="/add_lecture" method="POST">
       <label for="lecture_id">Lecture ID:</label><br>
       <input type="number" id="lecture_id" name="lecture_id" required><br>
       <label for="topic">Topic:</label><br>
@@ -55,7 +55,7 @@
     </form>
   
     <h3>Add Student</h3>
-    <form action="/" method="POST">
+    <form action="/add_student" method="POST">
       <label for="student_id">Student ID:</label><br>
       <input type="number" id="student_id" name="student_id" required><br>
       <label for="student_name">Student Name:</label><br>
@@ -66,14 +66,16 @@
     </form>
   
     <h3>Add Course</h3>
-    <form action="/" method="POST">
+    <form action="/add_course" method="POST">
       <label for="course_id">Course ID:</label><br>
       <input type="number" id="course_id" name="course_id" required><br>
+      <label for="course_name">Course Name:</label><br>
+      <input type="text" id="course_name" name="course_name" required><br>
       <input type="submit" value="Add Course">
     </form>
   
     <h3>Add Room</h3>
-    <form action="/" method="POST">
+    <form action="/add_room" method="POST">
       <label for="room_id">Room ID:</label><br>
       <input type="number" id="room_id" name="room_id" required><br>
       <label for="building">Building:</label><br>
@@ -84,7 +86,7 @@
     </form>
   
     <h3>Add Assistant</h3>
-    <form action="/" method="POST">
+    <form action="/add_assistant" method="POST">
       <label for="assistant_id">Assistant ID:</label><br>
       <input type="number" id="assistant_id" name="assistant_id" required><br>
       <label for="assistant_name">Assistant Name:</label><br>
