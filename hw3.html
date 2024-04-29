@@ -96,7 +96,6 @@
   
 
   </div>
-  
 
   <h3>Retrieve Data</h3>
   <form action="/retrieve" method="GET">
@@ -105,5 +104,14 @@
     <input type="text" id="table_name" name="table_name" required><br>
     <input type="submit" value="Retrieve Data">
   </form>
+
+  <h3>Clear Data</h3>
+  <form action="/clear" method="GET">
+    <label for="table_name">Table Name:</label><br>
+    <p>Administrator --- Teacher --- Student --- Assistant  --- Course --- Room</p>
+    <input type="text" id="table_to_clear_name" name="table_to_clear_name" required><br>
+    <input type="submit" value="Clear Data">
+  </form>
+  
 </body>
 </html>
