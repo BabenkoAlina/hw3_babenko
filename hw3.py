@@ -154,6 +154,17 @@ def retrieve():
     else:
         return "Table does not exist or no data found."
 
+@app.route("/clear", methods=["GET", "DELETE"])
+def delete_data_from_table():
+    table_name = request.args.get("table_to_clear_name")
+    conn = sqlite3.connect("lectures.db")
+    cursor = conn.cursor()
+    cursor.execute(f"DELETE FROM {table_name}")
+    conn.commit()
+    conn.close()
+    return "Data deleted successfuly"
+
+
 if __name__ == "__main__":
     create_tables()
     app.run(debug=True)
